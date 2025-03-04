@@ -2,6 +2,7 @@ package learninghibernate.Boutique_Management_Sysyem;
 
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.GeneratedValue;
@@ -19,6 +20,7 @@ public class Bot {
 @GeneratedValue(strategy=GenerationType.AUTO)
 private int itemId;
 
+@Column(unique = true)
 private String name;
 
 private String category;
